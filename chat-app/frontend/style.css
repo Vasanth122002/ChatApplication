@@ -1,0 +1,60 @@
+/* Chat box styling */
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  margin-bottom: 10px;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.message .sender {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Align user messages to the right */
+.message.user-message {
+  justify-content: flex-end;
+}
+
+.message.user-message .message-text {
+  background-color: #007bff;
+  color: white;
+  border-radius: 15px;
+  padding: 8px 15px;
+  max-width: 80%;
+}
+
+/* Align received messages to the left */
+.message.other-message {
+  justify-content: flex-start;
+}
+
+.message.other-message .message-text {
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 15px;
+  padding: 8px 15px;
+  max-width: 80%;
+}
+
+/* Input field and button styling */
+.input-group {
+  margin-top: 10px;
+}
+
+#messageInput {
+  border-radius: 20px;
+}
+
+#sendButton {
+  border-radius: 20px;
+}
